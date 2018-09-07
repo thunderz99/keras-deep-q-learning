@@ -12,13 +12,14 @@ roseについて、みんなの絵文字レスポンスによって回答の精�
 
 ![animation](./assets/animation.gif)
 
-デモ
 
 ### どんなゲーム
 
 <http://fluxml.ai/experiments/cartPole/>
 
 ### AIの学習の様子
+
+デモ
 
 ```
 $ python3 dqn.py
@@ -56,11 +57,10 @@ $ python3 dqn.py
 ```
 
 
-
 ## 今後の発展
 
 * roseの改善
-* ゲームの自動プレー？
+* ゲームの自動プレー？？
 
 ### Usage
 
