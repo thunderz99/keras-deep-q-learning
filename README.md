@@ -26,14 +26,41 @@ $ python3 dqn.py
 
 ## 実現の仕方
 
+![image](assets/dqn-image.png)
+
+
+### 擬似コード
+
+```
+
+ゲーム状態初期化(state)
+
+	冒険か・推測かを決める
+	
+	アクション(action)を選択する
+	
+	報酬(reward)及び次の状態(new_state)を入手
+	
+	上記の経験を記憶する
+	
+	状態を更新（state = new_state）
+	
+	記憶した経験から訓練用データを抽出
+	
+	学習（推測精度を高めるようパラメータ更新）
+	
+	繰り返し（アクション）
+	
+繰り返し（ゲーム）
+
+```
+
 
 
 ## 今後の発展
 
-* いろんなフォームデータから、結果を推測・分類するタスクに活用できそう
-  * 与信判断？ プロジェクト健康度判断？ 
-* Word2VecでテキストのVectorを強化
-* CNN/RNNで精度向上？
+* roseの改善
+* ゲームの自動プレー？
 
 ### Usage
 
@@ -50,13 +77,4 @@ $ python3 dqn.py
 
 [3] <https://keon.io/deep-q-learning/>
 
-
-
-
-
-
-
-
-
-![animation](./assets/animation.gif)
 
